@@ -1,0 +1,86 @@
+@import url('common.css');
+
+header {
+  background: #f6f5ef;
+  width: 100%;
+  height: 120px;
+  border-top: 2px solid #474747;
+  border-bottom: 2px solid #474747;
+  line-height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+header .inner-header {
+  /* border: 3px solid tomato; */
+  width: 55%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  width: 75px;
+  height: 75px;
+
+  transform: translate(30%, 30%);
+}
+
+
+header .inner-header .logo img {
+  width: 100%;
+ 
+}
+
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  margin-right: 5%;
+  float: right;
+  color: #313131;
+  font-size: 13px;
+
+
+}
+header .inner-header .tnb li {
+  /* 자간 조절하기 */
+  float: left;
+  margin-right: 25px;
+  position: relative;
+}
+
+
+header .inner-header .tnb li img {
+  /* border: 2px solid red; */
+  width: 20px;
+  height: 21px;
+  transform: translate(30%, 30%);
+}
+
+
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: right;
+  /* margin-left: 150px; */
+  padding-top: 10;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed yellow; */
+  float: left;
+  margin-right: 30px;
+}
+
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #313131;
+  font-size: 14px;
+  padding-bottom: 15px;
+  font-weight:100px;
+}
+
+section .sub-title {
+  border: 2px solid red;
+  height: 98px;
+  background: #ffffff;
+}
