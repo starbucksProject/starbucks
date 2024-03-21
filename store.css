@@ -1,4 +1,85 @@
 @import url(common.css);
+header {
+    background: #f6f5ef;
+    width: 100%;
+    height: 120px;
+    /* border-top: 2px solid #474747; */
+    /* border-bottom: 2px solid #474747; */
+    line-height: 40px;
+    position: fixed;
+    top: 0;
+  
+  }
+  header .inner-header {
+    /* border: 3px solid tomato; */
+    width: 58%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  header .inner-header .logo {
+    /* border: 3px solid violet; */
+    float: left;
+    width: 75px;
+    height: 75px;
+  
+    transform: translate(30%, 30%);
+  }
+  
+  
+  header .inner-header .logo img {
+    width: 100%;
+   
+  }
+  
+  header .inner-header .tnb {
+    /* border: 3px solid blue; */
+    margin-right: 5%;
+    float: right;
+    color: #313131;
+    font-size: 13px;
+  
+  
+  }
+  header .inner-header .tnb li {
+    /* 자간 조절하기 */
+    float: left;
+    margin-right: 25px;
+    position: relative;
+  }
+  
+  
+  header .inner-header .tnb li img {
+    /* border: 2px solid red; */
+    width: 20px;
+    height: 21px;
+    transform: translate(30%, 30%);
+  }
+  
+  
+  header .inner-header .gnb {
+    /* border: 3px solid red; */
+    float: right;
+    /* margin-left: 150px; */
+    padding-top: 10;
+  }
+  header .inner-header .gnb li {
+    /* border: 3px dashed yellow; */
+    float: left;
+    margin-right: 30px;
+  }
+  
+  header .inner-header .gnb li a {
+    /* background: red; */
+    display: block;
+    color: #313131;
+    font-size: 14px;
+    padding-bottom: 15px;
+    font-weight:100px;
+  }
+.container {
+    margin-top: 120px;
+}
 .sub_tit_wrap{
     border: 1px solid #000;
     width: 100%;
@@ -170,5 +251,93 @@ section.bn2 a:hover, section.bn4 a:hover{
     text-decoration: underline;
     
 }
+/* 푸터받아온거 지울수있음 */
+/* footer */
+#footer {
+    background: #2C2A29;
+    clear: both;
+    position: relative;
+    width: 100%;
+    padding: 32px 0 35px 0;
+    color: #fff;
+  }
+  
+  .footer_menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    margin-bottom: 100px;
+  }
+  .footer_menu img{
+    font-size: 5px;
+    height: 130px;
+  }
+  
+  .footer_menu ul .footer_main_ttl{
+    padding: 10px 10px 10px 5px;
+    
+  }
+  .footer_menu ul li{
+    padding: 5px;
+  }
+  
+  
+  /* footer award */
+  
+  .footer_awards_wrap {
+    background: #282828;
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .footer_award{
+    display: flex;
+    justify-content: center;
+  }
+  .footer_award li{
+    list-style: none;
+  }
+  /* copyright */
 
+.copyright{
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+  
+  }
+  .copyright a{
+    border-right: 1px solid #393939;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+  .copyright .c_00b050{
+    color: #00b050;
+  }
+  .copyright .btned{
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    margin: 10px 5px 0 3px;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  .copyright .copy_menu{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: #999;
+    margin: 20px;
+  }
+  .copyright .copy_menu li{
+    padding-right: 25px;
+  }
+  .copyright .en{
+    display: block;
+    margin: 20px;
+    padding-top: 5px;
+    color: #999;
+  }
 
