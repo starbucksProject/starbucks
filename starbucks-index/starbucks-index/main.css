@@ -1,0 +1,642 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+
+/* reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body{
+  margin: 0;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+li{
+  list-style: none;
+}
+*{
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  background: #f6f5ef;
+  width: 100%;
+  height: 120px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #e5e5e5;
+  line-height: 40px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden;
+}
+header .inner-header {
+  /* border: 3px solid tomato; */
+  width: 55%;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .inner-header .logo {
+  /* border: 3px solid violet; */
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto ;
+  
+
+  transform: translate(-10%, 30%);
+}
+
+
+header .inner-header .logo img {
+  width: 100%;
+  
+}
+
+header .inner-header .tnb {
+  /* border: 3px solid blue; */
+  margin-right: 5%;
+  float: right;
+  color: #313131;
+  font-size: 13px;
+
+
+}
+header .inner-header .tnb li {
+  float: left;
+  margin-right: 25px;
+  position: relative;
+}
+
+
+header .inner-header .tnb li img {
+  /* border: 2px solid red; */
+  width: 20px;
+  height: 21px;
+  transform: translate(30%, 30%);
+}
+
+
+header .inner-header .gnb {
+  /* border: 3px solid red; */
+  float: right;
+  /* margin-left: 150px; */
+  padding-top: 10;
+}
+header .inner-header .gnb li {
+  /* border: 3px dashed yellow; */
+  float: left;
+  margin-right: 30px;
+}
+
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #313131;
+  font-size: 14px;
+  padding-bottom: 15px;
+  font-weight:100px;
+}
+
+
+/* float */
+.layer_floating{
+  position: fixed;
+  top: 150px;
+  right: 15%;
+  width: 140px;
+  margin-left: 485px;
+  z-index: 9999;
+}
+
+/* main-visual */
+.main-visual_wrap{
+  width: 100%;
+  margin-top: 120px;
+height: 32vw;
+background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_3_cherry_blossom_top_bg.jpg) no-repeat;
+position: relative;
+overflow: hidden;
+}
+.main-visual_inner{
+  margin: 0 ;
+}
+.main-visual_inner .main-visual_slogan{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+
+}
+.set_common{
+  position: absolute;
+}
+
+.set_common{
+  position: absolute;
+  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+.set_02{
+  animation-delay: 0.5s;
+}
+
+.set_03 {
+  animation-delay: 1s;
+
+}
+
+.set_04 {
+  animation-delay: 1.5s;
+}
+
+
+
+.main-visual_set .set_01{
+  z-index: 8;
+  top: 20.43%;
+  left: 37.85%;
+  width: 14.35%;
+}
+.main-visual_set .set_02{
+  z-index: 9;
+  top: 37.93%;
+  left: 50.6%;
+  width: 18.5%;
+}
+.main-visual_set .set_03{
+  z-index: 8;
+  top: 17.03%;
+  right: 23.65%;
+  width: 18.8%;
+}
+.main-visual_set .set_04{
+  z-index: 9;
+  top: 48.92%;
+  right: 14.55%;
+  width: 19.4%;
+}
+.btn_slogan{
+  z-index: 10;
+    top: 66%;
+    left: 15.1%;
+    text-align: center;
+    position: absolute;
+    width: 16%;
+}
+.btn_slogan a{
+  width: 40.98%;
+    margin: 0 auto;
+    color: #1a3c34;
+    border: 2px solid #1a3c34;
+    padding: 7px 27px;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.btn_slogan a:hover{
+  background: #1a3c34;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* notice */
+.line_notice{
+  height: 62px;
+  position: relative;
+  display: flex;
+}
+.line_notice_left{
+  width: 50%;
+  height: 62px;
+  background: #111;
+}
+.line_notice_left .notice_tit{
+  color: #d5d5d5;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+
+}
+.line_notice_left .plus{
+  width: 100%;
+  /* position: absolute; */
+}
+.line_notice_left .plus a{
+  position: absolute;
+}
+.line_notice_right{
+  width: 50%;
+  background: #f6f5ef;;
+}
+.line_notice_right .prom_ttl{
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 280px;
+  margin-top: 20px;
+}
+
+/* new-rewards */
+.new-rewards_wrap{
+  background: #1e3932;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.new-rewards_inner{
+  display: flex;
+  color: #fff;
+  left: -8%;
+  /* padding-right: 200px; */
+  padding: 10px 0 20px;
+  position: relative;
+  
+}
+.new-rewards_inner .new-rewards_logo img{
+  height: 150px;
+  padding-top: 20px;
+  padding-right: 50px;
+  /* margin-bottom: 30px; */ 
+}
+
+.new-rewards_conts{
+  /* margin-left: 100px; */
+  
+}
+.info-cont{
+  font-size: 18px ;
+  border-bottom: 1px solid #4b615b;
+}
+.gift-cont{
+  font-size: 13px;
+}
+.btn-signin_group{
+  position: absolute;
+  right: -200px;
+  top: 100px;
+
+  
+}
+.btn-signin_group .btn-signin_join{
+  border: 1px solid #00704a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #00704a;
+}
+.btn-signin_group .btn-signin_login{
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.btn_egift{
+  font-size: 18px;
+  position: absolute;
+  right: -200px;
+  bottom: 25px;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  
+}
+
+
+/* main-been */
+#main-been_wrap{
+  width: 100%;
+  height: 550px;
+  position: relative;
+  font-size: 15px;
+}
+.been_img img{
+  width: 100%;
+}
+.been_img_box{
+  position: absolute;
+  left: 32%;
+  top:100px;
+}
+.been_txt_box{
+  position: absolute;
+  right: 31%;
+  top: 200px;
+}
+.btn-been_detail{
+  margin-top: 40px;
+  width: 125px;
+  height: 40px;
+}
+.btn-been_detail a{
+  color: #91674a;
+  border: 2px solid #91674a;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.6s;
+}
+.btn-been_detail a:hover{
+  background: #91674a;
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* reserve */
+.reserve_wrap{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reserve_title {
+  position: absolute;
+  left: 32.5%;
+  top: 70px;
+
+}
+.reserve_visual img{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+  animation-fill-mode: both;
+  animation-delay: 2.5s;
+}
+
+
+.reserve_detail-btn_wrap{
+  position: absolute;
+  bottom: 120px;
+  left: 38.5%;
+  color: #b87643;
+  width: 125px;
+  height: 34px;
+  text-align: center;
+  padding-top: 5px;
+}
+.reserve_detail-btn_wrap a{
+  padding: 6px 20px;
+  transition: 0.6s;
+  border-radius: 5px;
+  border: 2px solid #b87643;
+  font-size: 15px;
+}
+.reserve_detail-btn_wrap a:hover{
+  background: #b87643;
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* fav */
+#favWrap{
+  background: url(https://image.istarbucks.co.kr/upload/common/img/main/2024/2024_3_cherry_blossom_pick_bg.jpg) center center fixed no-repeat #45434c;
+  background-size: auto 87%;
+  height: 800px;
+  padding: 0;
+  position: relative;
+  background-position: bottom;
+}
+.fav_img{
+  
+  position: absolute;
+  right: 9%;
+  top: 100px;
+}
+.fav_prod_txt01 img{
+  position: absolute;
+  left: 28%;
+  top: 120px;
+}
+.fav_prod_txt02 img{
+  position: absolute;
+  left: 22.5%;
+  top: 47%;
+}
+.btn_fav_prod{
+  position: absolute;
+  bottom: 24%;
+  left: 34%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  width: 125px;
+  height: 34px;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.5s;
+}
+.btn_fav_prod:hover{
+  background: #fff;
+  text-decoration: underline;
+  color: #000;
+  /* border-color: #000; */
+}
+
+/* reserve_magazine */
+#reserve_magazine_wrap{
+  /* position: relative; */
+  height: 400px;
+}
+.magazine_inner{
+  width: 100%;
+  top: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.title_img{
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  left: 40px;
+}
+.magazine_img{
+  position: absolute;
+  top: -30px;
+  right: 25%;
+}
+.magazine-btn{
+  position: absolute;
+  top: 60%;
+  left: 41%;
+  border: 2px solid #000;
+  height: 34px;
+  border-radius: 5px;
+  width: 125px;
+  text-align: center;
+  line-height: 34px;
+  transition: 0.5s;
+}
+.magazine-btn:hover{
+  background: #000;
+  text-decoration: underline;
+  color: #fff;
+}
+.magazine-btn a{
+  /* padding: 10px 30px; */
+}
+
+/* store_exp */
+.store_wrap_inner{
+  position: relative;
+}
+.store_img{
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.store_img01{
+  position: absolute;
+  top: 160px;
+  left: 35%;
+  z-index: 1;
+}
+.store_img02{
+  position: absolute;
+  top: 0px;
+  left: 25%;
+}
+.store_img03{
+  position: absolute;
+  top: 0px;
+  left: 40%;
+}
+.store_img04{
+  position: absolute;
+  bottom: 10px;
+  right: 20%;
+}
+.store_text01{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+.store_text02{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+.store_btn{
+  position: absolute;
+  bottom: 23%;  
+  left: 50%;
+  border: 2px solid #000;
+  color: #000;
+  width: 121px;
+  height: 38px;
+  text-align: center;
+  padding-top: 5px;
+  transition: 0.5s;
+  border-radius: 2px;
+}
+
+.store_btn:hover{
+  background: #000;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/* 푸터받아온거 지울수있음 */
+/* footer */
+#footer {
+  background: #2C2A29;
+  clear: both;
+  position: relative;
+  width: 100%;
+  padding: 32px 0 35px 0;
+  color: #fff;
+}
+
+.footer_menu {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+.footer_menu img{
+  font-size: 5px;
+  height: 130px;
+}
+
+.footer_menu ul .footer_main_ttl{
+  padding: 10px 10px 10px 5px;
+  
+}
+.footer_menu ul li{
+  padding: 5px;
+}
+
+
+/* footer award */
+
+.footer_awards_wrap {
+  background: #282828;
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.footer_award{
+  display: flex;
+  justify-content: center;
+}
+.footer_award li{
+  list-style: none;
+}
+/* copyright */
+
+.copyright{
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+
+}
+.copyright a{
+  border-right: 1px solid #393939;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.copyright .c_00b050{
+  color: #00b050;
+}
+.copyright .btned{
+  border: 2px solid #fff;
+  padding: 10px 25px;
+  border-radius: 3px;
+  margin: 10px 5px 0 3px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.copyright .copy_menu{
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: #999;
+  margin: 20px;
+}
+.copyright .copy_menu li{
+  padding-right: 25px;
+}
+.copyright .en{
+  display: block;
+  margin: 20px;
+  padding-top: 5px;
+  color: #999;
+}
