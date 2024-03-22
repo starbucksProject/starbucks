@@ -1,0 +1,32 @@
+/* reset css */
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+
+
+/* reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button, input {
+  outline: none;
+  border: none;
+  color: inherit;
+}
+
+/* common */
+* {
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+body {
+  font-size: 14px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.en {
+  font-family: 'Exo 2', sans-serif;
+}
+/* 모바일에서는 줄바꿈 해제 */
